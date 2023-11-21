@@ -1,7 +1,8 @@
 <template>
   <div>
-    <nav>
-      <ul>
+    <img src="../assets/img/construction_logo.png" alt="logo" />
+    <nav class="">
+      <ul class="">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
@@ -9,16 +10,23 @@
       </ul>
     </nav>
   </div>
-  <div id="hero" class="container">
-    <img src="../assets/img/home-slider-62528242.jpg" alt="slider" />
+  <div id="hero" class="slider d-flex flex-column align-items-center">
     <h1>Building Inspiring Spaces</h1>
     <h5>We Build Inspiring Residential & Commercial Spaces</h5>
-    <button>Explore recent work</button>
-    <button>Get a quote today</button>
+    <div>
+      <button>Explore recent work</button>
+      <button>Get a quote today</button>
+    </div>
   </div>
-  <div class="container d-flex">
-    <span>Do you have a construction project we can help with?</span>
-    <button>GET A FREE QUOTE</button>
+  <div
+    class="y-flag d-flex flex-column align-items-center justify-content-center"
+  >
+    <span class="pb-5"
+      >Do you have a construction project we can help with?</span
+    >
+    <div>
+      <button>GET A FREE QUOTE</button>
+    </div>
   </div>
 </template>
 
@@ -28,7 +36,7 @@ export default {
 
   data() {
     return {
-      store,
+      menuItems: ["Home", "About", "Services", "Contact"],
     };
   },
 };

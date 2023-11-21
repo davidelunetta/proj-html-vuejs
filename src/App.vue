@@ -1,20 +1,19 @@
 <template>
-  <div></div>
+  <div class="app">
+    <Header></Header>
+  </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-import { store } from "../src/assets/data/store.js";
+// import { store } from "../src/assets/data/store.js";
 export default {
   name: "App",
   components: {
     Header,
   },
   data() {
-    return {
-      store,
-      menuItems: [],
-    };
+    return {};
   },
 };
 </script>

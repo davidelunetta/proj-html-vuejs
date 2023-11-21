@@ -3,10 +3,7 @@
     <img src="../assets/img/construction_logo.png" alt="logo" />
     <nav class="">
       <ul class="">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+       <li v-for="item in menuItems"><a href="#">{{ item }}</a></li>
       </ul>
     </nav>
   </div>
@@ -14,8 +11,8 @@
     <h1>Building Inspiring Spaces</h1>
     <h5>We Build Inspiring Residential & Commercial Spaces</h5>
     <div>
-      <button>Explore recent work</button>
-      <button>Get a quote today</button>
+      <button class="btn-header-right">Explore recent work</button>
+      <button class="btn-header-left">Get a quote today</button>
     </div>
   </div>
   <div
@@ -24,9 +21,9 @@
     <span class="pb-5"
       >Do you have a construction project we can help with?</span
     >
-    <div>
+  </div>
+  <div class="d-flex align-items-center justify-content-center ">
       <button>GET A FREE QUOTE</button>
-    </div>
   </div>
 </template>
 

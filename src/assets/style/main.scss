@@ -7,8 +7,26 @@
     height: 80vh;
     background-image: url('/src/assets/img/home-slider-62528242.jpg');
     background-size: cover;
+    h1{
+        font-size: 5rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    h5{
+        font-size: 2rem;
+        color: #ffff00;
+    }
+}
+.btn-header-right{
+   
+        background-color: black;
+    
 }
 .y-flag{
-    height: 30vh;
+    height: 15vh;
     background-color: #FED03D;
+    span{
+        font-size: 2.5rem;
+        padding-top: 25px;
+    }
 }

@@ -114,14 +114,66 @@
       >
     </div>
   </div>
-  <div class="parallax"></div>
+  <div
+    class="parallax d-flex flex-column justify-content-center align-items-center"
+  >
+    <span class="fw-medium fs-3"> Our Home Owners Say </span>
+    <div class="separator mt-3"></div>
+    <div class="tab-container">
+      <div
+        v-for="(tab, index) in tabs"
+        :key="index"
+        class="tab-content"
+        :class="{ active: activeTab === index }"
+      >
+        <div class="d-flex flex-column justify-content-center">
+          <img :src="tab.image" alt="img" class="tab-image mt-3" />
+          <span>{{ tab.content }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="tabs">
+      <button
+        v-for="(tab, index) in tabs"
+        :key="index"
+        @click="activateTab(index)"
+        :class="{ active: activeTab === index }"
+      ></button>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "Main",
 
-  data() {},
+  data() {
+    return {
+      activeTab: 0,
+      tabs: [
+        {
+          image: "./src/assets/img/home-testimonial-84268399.jpg",
+          content:
+            "“Many novice real estate investors soon quit the profession and invest. When you invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving money shelter you from.”",
+        },
+        {
+          image: "./src/assets/img/home-testimonial-113165296.jpg",
+          content: "Contenuto del Tab 2",
+        },
+      ],
+    };
+  },
+  mounted() {
+    // Funzione per scorrere automaticamente tra i tab ogni 5 secondi
+    setInterval(() => {
+      this.activeTab = (this.activeTab + 1) % this.tabs.length;
+    }, 10000);
+  },
+  methods: {
+    activateTab(index) {
+      this.activeTab = index;
+    },
+  },
 };
 </script>
 

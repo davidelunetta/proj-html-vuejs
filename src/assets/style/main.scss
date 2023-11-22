@@ -70,3 +70,15 @@ $fa-font-path: '../webfonts';
     background-image: url('/src/assets/img/home-parallax-144609983.jpg');
 
 }
+
+// TAB //
+.tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  .tab-image {
+    max-width: 100px;
+    max-height: 100px;
+  }

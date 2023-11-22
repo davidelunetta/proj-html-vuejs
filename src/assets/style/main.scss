@@ -39,7 +39,6 @@ $fa-font-path: '../webfonts';
     position: relative;
 }
 
-// MAIN //
 
 .separator{
     border: 1px solid #fed03d;
@@ -60,3 +59,8 @@ $fa-font-path: '../webfonts';
     width: 350px;
     height: 1px;
   }
+.grey-line{
+    border: 1px solid grey;
+    width: 20px;
+    height: 1px;
+}

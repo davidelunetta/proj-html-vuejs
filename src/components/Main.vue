@@ -75,18 +75,44 @@
       </span>
     </div>
   </div>
-  <div class="d-flex-justify-content-between">
-    <div class="d-flex flex-column">
+
+  <div class="d-flex justify-content-between mt-3 ms-5">
+    <div class="d-flex flex-column align-items-center">
       <i class="fa-solid fa-house"></i>
       <span>Great Services</span>
-      <span
+      <div class="grey-line"></div>
+      <span class="text-center"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="d-flex flex-column align-items-center">
+      <i class="fa-solid fa-house"></i>
+      <span>Great Services</span>
+      <div class="grey-line"></div>
+      <span class="text-center"
+        >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit, sed quia</span
+      >
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <i class="fa-solid fa-house"></i>
+      <span>Great Services</span>
+      <div class="grey-line"></div>
+      <span class="text-center"
+        >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit, sed quia</span
+      >
+    </div>
+    <div class="d-flex flex-column align-items-center me-5">
+      <i class="fa-solid fa-house"></i>
+      <span>Great Services</span>
+      <div class="grey-line"></div>
+      <span class="text-center"
+        >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit, sed quia</span
+      >
+    </div>
   </div>
 </template>
 

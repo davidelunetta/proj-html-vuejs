@@ -1,8 +1,8 @@
 <template>
   <div class="app">
     <Header></Header>
-    <Main></Main>
     <Card></Card>
+    <Main></Main>
   </div>
 </template>
 

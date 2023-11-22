@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pt-5 pb-5 d-flex flex-column justify-content-center align-items-center"
+    class="pt-5 pb-5 d-flex flex-column justify-content-center align-items-center text-center"
   >
     <span class="fw-medium fs-3"> Specialists in modern construction </span>
     <div class="separator mt-3"></div>

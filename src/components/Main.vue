@@ -114,6 +114,7 @@
       >
     </div>
   </div>
+  <div class="parallax"></div>
 </template>
 
 <script>

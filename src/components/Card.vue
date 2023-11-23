@@ -13,17 +13,31 @@
       </span>
     </div>
   </div>
-  <div class="d-flex flex-row justify-content-between align-items-center pe-5">
-    <div v-for="item in myCard" class="my-card">
-      <div class="logo">
-        {{ item.logo }}
-      </div>
-      <div>
-        <span class="title">
-          {{ item.titolo }}
-        </span>
-        <div>
-          <span class="description">{{ item.descrizione }}</span>
+  <div
+    class="d-flex flex-row justify-content-between align-items-center ps-5 pe-5"
+  >
+    <div
+      v-for="(item, index) in myCard"
+      @mouseover="showRetro(index)"
+      @mouseout="hideRetro(index)"
+      :key="index"
+      class="my-card card-construction"
+    >
+      <div class="card-content">
+        <div class="normal-state">
+          <div class="d-flex align-items-center justify-content-center">
+            <div
+              class="logo d-flex align-items-center justify-content-center fs-3"
+              v-html="item.logo"
+            ></div>
+          </div>
+
+          <h3>{{ item.titolo }}</h3>
+          <p>{{ item.descrizione }}</p>
+        </div>
+        <div class="hover-state" v-show="item.showRetro">
+          <h3>{{ item.titoloRetro }}</h3>
+          <p>{{ item.testoRetro }}</p>
         </div>
       </div>
     </div>
@@ -33,6 +47,14 @@
 <script>
 export default {
   name: "Card",
+  methods: {
+    showRetro(index) {
+      this.myCard[index].showRetro = true;
+    },
+    hideRetro(index) {
+      this.myCard[index].showRetro = false;
+    },
+  },
   data() {
     return {
       myCard: [
@@ -44,6 +66,7 @@ export default {
           titoloRetro: "Artfully Crafted",
           testoRetro:
             "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.",
+          showRetro: false,
         },
         {
           logo: '<i class="fa-solid fa-rotate"></i>',
@@ -53,6 +76,7 @@ export default {
           titoloRetro: "Freshly New",
           testoRetro:
             "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.",
+          showRetro: false,
         },
         {
           logo: '<i class="fa-solid fa-house"></i>',
@@ -62,6 +86,7 @@ export default {
           titoloRetro: "Perfect Lines",
           testoRetro:
             "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.",
+          showRetro: false,
         },
         {
           logo: '<i class="fa-solid fa-truck"></i>',
@@ -71,6 +96,7 @@ export default {
           titoloRetro: "Planning",
           testoRetro:
             "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.",
+          showRetro: false,
         },
       ],
     };
@@ -80,4 +106,19 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/card.scss";
+.normal-state {
+  display: block;
+}
+
+.hover-state {
+  display: none;
+}
+
+.my-card:hover .normal-state {
+  display: none;
+}
+
+.my-card:hover .hover-state {
+  display: block;
+}
 </style>

@@ -5,24 +5,32 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/solid.scss'; 
 @import '@fortawesome/fontawesome-free/scss/regular.scss'; 
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
+
+// CARD//
+
+.card-construction{
+  width: 260px;
+  height: 320px;
+}
 .my-card{
     margin-bottom: 20px; 
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%; 
+    // width: 100%; 
     box-sizing: border-box;
    
-        &__logo {
-            margin-right: 15px; 
+        .logo {
+          border: 1px solid black;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+            // margin-right: 15px; 
             img {
               max-width: 50px; 
               height: auto; 
             }
           }
-        
-          &__content {
-            flex: 1;
             .title {
               font-weight: bold;
               font-size: 1.1rem; 
@@ -34,7 +42,7 @@ $fa-font-path: '../webfonts';
               color: #666; 
             }
           }
-        }
+        
        
     
 

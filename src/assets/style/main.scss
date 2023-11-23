@@ -22,10 +22,42 @@ $fa-font-path: '../webfonts';
         color: #FED03D;
     }
 }
-.btn-header-right{
-   
-        background-color: black;
+.btn-header-left{
+    background-color: #333333; /* Sfondo nero */
+    color: #ffffff; /* Colore del testo bianco */
+    padding: 10px 20px; /* Padding per spaziatura interno del bottone */
+    border: none; /* Rimuove il bordo */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: color 0.3s; 
     
+}
+.btn-header-left:hover{
+    background-color: #FED03D;
+    color: #333333;
+}
+.btn-header-right{
+    background-color: #FED03D; /* Sfondo nero */
+    color: #333333; /* Colore del testo bianco */
+    padding: 10px 20px; /* Padding per spaziatura interno del bottone */
+    border: none; /* Rimuove il bordo */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: color 0.3s; 
+}
+.btn-header-right:hover{
+    background-color: #333333; /* Sfondo nero */
+    color: #ffffff;
+}
+.btn-projects{
+    background-color: transparent; /* Sfondo trasparente */
+    color: black; /* Colore del testo */
+    padding: 10px 20px; /* Padding per spaziatura interna del bottone */
+    border: 1px solid transparent; /* Bordo sottile */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s;
+}
+.btn-projects:hover{
+    background-color: #FED03D; /* Cambia il colore di sfondo al passaggio del mouse */
+  color: black;
 }
 .y-flag{
     height: 15vh;
@@ -41,6 +73,10 @@ $fa-font-path: '../webfonts';
 
 ul{
     list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .separator{
     border: 1px solid #fed03d;

@@ -58,7 +58,7 @@
   </div>
   <div class="d-flex justify-content-between mt-5">
     <div class="line ms-5 mt-3"></div>
-    <a href="#"><button>VIEW ALL PROJECTS</button></a>
+    <a href="#"><button class="btn-projects">VIEW ALL PROJECTS</button></a>
     <div class="line me-5 mt-3"></div>
   </div>
   <div
@@ -177,7 +177,7 @@
   </div>
   <div class="d-flex justify-content-between mt-5">
     <div class="line ms-5 mt-3"></div>
-    <a href="#"><button>VIEW ALL ARTICLES</button></a>
+    <a href="#"><button class="btn-projects">VIEW ALL ARTICLES</button></a>
     <div class="line me-5 mt-3"></div>
   </div>
   <div

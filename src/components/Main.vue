@@ -195,21 +195,22 @@
     </div>
   </div>
   <!-- CAROUSEL -->
-  <div class="container">
-    <split-carousel :autoplay="true" :autoplay-timeout="3000" :width="1200">
-      <slide v-for="(image, index) in images" :key="index">
+  <div class="my-container">
+    <split-carousel>
+      <split-carousel-item v-for="image in images" :key="image.id">
         <img :src="image.src" :alt="image.alt" />
-      </slide>
+      </split-carousel-item>
     </split-carousel>
   </div>
 </template>
 
 <script>
-import SplitCarousel from "vue-split-carousel";
+import { SplitCarousel, SplitCarouselItem } from "vue-split-carousel";
 export default {
   name: "Main",
   components: {
     SplitCarousel,
+    SplitCarouselItem,
   },
 
   data() {
@@ -253,8 +254,31 @@ export default {
         },
       ],
       images: [
-        { src: "url_dell_immagine_1.jpg", alt: "Partner 1" },
-        { src: "url_dell_immagine_2.jpg", alt: "Partner 2" },
+        {
+          id: 1,
+          src: "/src/assets/img/home-logo1-219096700-320x202.png",
+          alt: "Partner 1",
+        },
+        {
+          id: 2,
+          src: "/src/assets/img/home-logo2-219096700-320x202.png",
+          alt: "Partner 2",
+        },
+        {
+          id: 3,
+          src: "/src/assets/img/home-logo9-219096700-320x202.png",
+          alt: "Partner 3",
+        },
+        {
+          id: 4,
+          src: "/src/assets/img/home-logo10-219096700-320x202.png",
+          alt: "Partner 4",
+        },
+        {
+          id: 5,
+          src: "/src/assets/img/home-logo11-219096700-320x202.png",
+          alt: "Partner 5",
+        },
       ],
     };
   },

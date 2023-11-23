@@ -2,24 +2,33 @@
   <!-- AVADA NUMBER -->
   <div class="home d-flex justify-content-between align-items-center">
     <div class="d-flex flex-column align-items-center">
-      <i class="fa-solid fa-suitcase fa-2xl" style="color: #fed03d"></i>
-      <span class="mt-4">3592</span>
-      <span>PLANNING APPLICATIONS</span>
+      <div class="fs-5">
+        <i class="fa-solid fa-suitcase fa-2xl" style="color: #fed03d"></i>
+      </div>
+
+      <span class="mt-4 avada-number">3592</span>
+      <span class="fs-6 text-white">PLANNING APPLICATIONS</span>
     </div>
     <div class="d-flex flex-column align-items-center">
-      <i class="fa-solid fa-building fa-2xl" style="color: #fed03d"></i>
-      <span class="mt-4">896</span>
-      <span>COMPLETED PROJECTS</span>
+      <div class="fs-5">
+        <i class="fa-solid fa-building fa-2xl" style="color: #fed03d"></i>
+      </div>
+      <span class="mt-4 avada-number">896</span>
+      <span class="fs-6 text-white">COMPLETED PROJECTS</span>
     </div>
     <div class="d-flex flex-column align-items-center">
-      <i class="fa-solid fa-users fa-2xl" style="color: #fed03d"></i>
-      <span class="mt-4">172</span>
-      <span>TRAINED PROFESSIONALS</span>
+      <div class="fs-5">
+        <i class="fa-solid fa-users fa-2xl" style="color: #fed03d"></i>
+      </div>
+      <span class="mt-4 avada-number">172</span>
+      <span class="fs-6 text-white">TRAINED PROFESSIONALS</span>
     </div>
     <div class="d-flex flex-column align-items-center">
-      <i class="fa-solid fa-globe fa-2xl" style="color: #fed03d"></i>
-      <span class="mt-4">19</span>
-      <span>INTERNATIONALS OFFICES</span>
+      <div class="fs-5">
+        <i class="fa-solid fa-globe fa-2xl" style="color: #fed03d"></i>
+      </div>
+      <span class="mt-4 avada-number">19</span>
+      <span class="fs-6 text-white">INTERNATIONALS OFFICES</span>
     </div>
   </div>
   <div
@@ -36,24 +45,62 @@
       </span>
     </div>
   </div>
-  <div class="recent-works d-flex justify-content-between">
-    <div>
+  <div class="d-flex justify-content-between ps-4 pe-4">
+    <div class="recent-works">
       <img
         src="../assets/img/project2-featured-15013609-400x400.jpg"
         alt="project2"
       />
+      <div
+        class="card-content d-flex flex-column justify-content-center align-items-center"
+      >
+        <div>
+          <a class="me-2" href="#"><i class="fa-solid fa-link"></i></a>
+          <a class="ms-2" href="#"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+
+        <span>Florida Healt Facility</span>
+        <small>Commercial</small>
+      </div>
     </div>
-    <div>
+    <div class="recent-works">
       <img
         src="../assets/img/project1-featured-294276386-400x400.jpg"
         alt="project1"
       />
+      <div
+        class="card-content d-flex flex-column justify-content-center align-items-center"
+      >
+        <div>
+          <a class="me-2" href="#"><i class="fa-solid fa-link"></i></a>
+          <a class="ms-2" href="#"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+        <span>Maine Modernity</span>
+        <small>Residential</small>
+      </div>
     </div>
-    <div>
+
+    <div class="recent-works">
       <img
         src="../assets/img/project3-featured-189023420-400x400.jpg"
         alt="project3"
       />
+      <div
+        class="card-content d-flex flex-column justify-content-center align-items-center"
+      >
+        <div>
+          <a class="me-2" href="#"><i class="fa-solid fa-link"></i></a>
+          <a class="ms-2" href="#"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+        <span>Exclusive urban living</span>
+        <small>Commercial</small>
+      </div>
     </div>
   </div>
   <div class="d-flex justify-content-between mt-5">
@@ -77,7 +124,7 @@
   </div>
 
   <div class="d-flex justify-content-between mt-3 ms-5">
-    <div class="d-flex flex-column align-items-center">
+    <div class="card-core d-flex flex-column align-items-center pt-3">
       <i class="fa-solid fa-house"></i>
       <span>Great Services</span>
       <div class="grey-line"></div>
@@ -86,27 +133,27 @@
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div class="d-flex flex-column align-items-center">
-      <i class="fa-solid fa-house"></i>
-      <span>Great Services</span>
+    <div class="card-core d-flex flex-column align-items-center">
+      <i class="fa-solid fa-gear"></i>
+      <span>Highest Standards</span>
       <div class="grey-line"></div>
       <span class="text-center"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div class="d-flex flex-column align-items-center">
-      <i class="fa-solid fa-house"></i>
-      <span>Great Services</span>
+    <div class="card-core d-flex flex-column align-items-center">
+      <i class="fa-solid fa-users"></i>
+      <span>Professional Team</span>
       <div class="grey-line"></div>
       <span class="text-center"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div class="d-flex flex-column align-items-center me-5">
-      <i class="fa-solid fa-house"></i>
-      <span>Great Services</span>
+    <div class="card-core d-flex flex-column align-items-center me-5">
+      <i class="fa-regular fa-lightbulb"></i>
+      <span>Creative Solutions</span>
       <div class="grey-line"></div>
       <span class="text-center"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
@@ -117,7 +164,7 @@
   <div
     class="parallax d-flex flex-column justify-content-center align-items-center"
   >
-    <span class="fw-medium fs-3"> Our Home Owners Say </span>
+    <span class="fw-medium fs-3 text-light fs-3"> Our Home Owners Say </span>
     <div class="separator mt-3"></div>
     <div class="tab-container">
       <div
@@ -126,9 +173,17 @@
         class="tab-content"
         :class="{ active: activeTab === index }"
       >
-        <div class="d-flex flex-column justify-content-center">
-          <img :src="tab.image" alt="img" class="tab-image mt-3" />
-          <span>{{ tab.content }}</span>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center pt-5"
+        >
+          <img
+            :src="tab.image"
+            alt="img"
+            class="tab-image mt-3 rounded-circle"
+          />
+          <span class="text-center text-light fw-semibold fs-3">{{
+            tab.content
+          }}</span>
         </div>
       </div>
     </div>
@@ -224,7 +279,8 @@ export default {
         },
         {
           image: "./src/assets/img/home-testimonial-113165296.jpg",
-          content: "Contenuto del Tab 2",
+          content:
+            "“No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property.”",
         },
       ],
       items: [

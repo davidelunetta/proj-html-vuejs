@@ -98,14 +98,7 @@ a{
 
 
 
-.home{
-    width: 100%;
-    height: 80vh;
-    // position: absolute;
-    // overflow: hidden;
-    background-image: url('/src/assets/img/home-244125289.jpg');
-    // box-shadow: 10px -30px -100px -30px rgb(255, 255, 255) inset, 0px 10px 20px -10px rgb(255, 255, 255) inset;
-}
+
 .line{
     border: 1px solid grey;
     width: 350px;
@@ -123,7 +116,18 @@ a{
     background-repeat:no-repeat ;
     overflow: hidden;
 }
-
+// AVADA NUMBER //
+.avada-number{
+    font-size: 3em;
+    color: #FED03D;
+}
+.home{
+    width: 100%;
+    height: 80vh;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: url('/src/assets/img/home-244125289.jpg');
+}
 // TAB //
 .tab-content {
     display: none;
@@ -154,6 +158,41 @@ a{
     }
   }
 
+  .recent-works{
+    position: relative;
+    width: 400px; /* Larghezza della card */
+    height: 400px; /* Altezza della card */
+    perspective: 1000px; /* Prospettiva per la trasformazione 3D */
+  }
+  .recent-works img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+  }
+  .recent-works .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+  }
+  .recent-works:hover img {
+    transform: rotateY(180deg); 
+   
+  }
+  
+  .recent-works:hover .card-content {
+    opacity: 1;
+    background-color: #FED03D;
+    width: 100%; 
+    height: 100%;/* Mostra i link e il testo al passaggio del mouse */
+  }
+  .card-core{
+    width: 300px;
+    height: 320px;
+  }
 //   FOOTER //
 
 .call-to-action{
@@ -161,7 +200,6 @@ a{
     height: 80vh;
     background-image: url('/src/assets/img/about-call-to-action-57862405.jpg');
     background-size: cover;
-    // background-repeat: no-repeat;
     background-position: bottom 0px right 0px;
 }
 .cta-right{
@@ -171,6 +209,9 @@ a{
 .my-footer{
     width: calc(100% / 4 - 20px)
 
+}
+.footer-text{
+    color: #FED03D;
 }
 .footer-container{
     background-color: #1F1F1F;

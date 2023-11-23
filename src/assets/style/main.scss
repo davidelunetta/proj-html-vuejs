@@ -39,7 +39,9 @@ $fa-font-path: '../webfonts';
     position: relative;
 }
 
-
+ul{
+    list-style: none;
+}
 .separator{
     border: 1px solid #fed03d;
     width: 200px;
@@ -118,4 +120,12 @@ $fa-font-path: '../webfonts';
 
 .my-footer{
     width: calc(100% / 4 - 20px)
+
+}
+.footer-container{
+    background-color: #1F1F1F;
+}
+.maps{
+    width: 200px;
+    height: 200px;
 }

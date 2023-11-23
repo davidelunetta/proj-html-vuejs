@@ -198,7 +198,7 @@
   <div class="my-container pb-5">
     <split-carousel>
       <split-carousel-item v-for="image in images" :key="image.id">
-        <img :src="image.src" :alt="image.alt" style="" />
+        <img :src="image.src" :alt="image.alt" />
       </split-carousel-item>
     </split-carousel>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="call-to-action d-flex justify-content-between">
     <div class="cta-right pt-5 pb-5 align-items-center">
-      <div class="">
+      <div class="ps-4">
         <span class="fw-medium fs-3 text-light"> Trusted Partners </span>
         <div class="separator mt-3"></div>
         <span class="text-light mt-3"
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="cta-right pt-5 pb-5 d-flex flex-column text-light">
-      <button>Get a Free Quote</button>
+      <button class="btn-header-right ms-5 me-5">Get a Free Quote</button>
       <span class="text-center pt-3">Only takes a few seconds!</span>
     </div>
   </div>

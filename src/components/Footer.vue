@@ -18,11 +18,10 @@
 
   <div class="footer-container d-flex justify-content-between">
     <div class="my-footer d-flex flex-column">
-      <img
-        src="\src\assets\img\footer-logo.png"
-        alt="logo"
-        style="width: 30px height=30px"
-      />
+      <div class="footer-logo mb-4 ms-2">
+        <img src="\src\assets\img\footer-logo.png" alt="logo" />
+      </div>
+
       <span class="text-center fs-6 text-light"
         >We are specialists in the construction of unique and exclusive
         properties. Our work inspires. We pride ourselves on delivering
@@ -32,7 +31,7 @@
       <button class="btn btn-light mt-2">Learn More</button>
     </div>
     <div class="my-footer d-flex flex-column">
-      <h5>LATEST TWEET</h5>
+      <h5 class="footer-text mt-3">LATEST TWEET</h5>
       <div class="mt-3 ms-1">
         <i class="fa-brands fa-x-twitter fa-2xl" style="color: #1d9bf0"></i>
       </div>
@@ -43,15 +42,15 @@
       <button class="btn btn-light mt-3">VIEW ON TWITTER</button>
     </div>
     <div class="my-footer d-flex flex-column">
-      <h5>CONTACT US TODAY</h5>
+      <h5 class="footer-text mt-3">CONTACT US TODAY</h5>
       <ul>
-        <li>
+        <li class="text-light">
           <span>
             <i class="fa-solid fa-globe"></i>
           </span>
           Corporate Location<br />1600 Amphitheatre Parkway<br />London WC1 1BA
         </li>
-        <li>
+        <li class="text-light">
           <span>
             <i class="fa-solid fa-house"></i>
           </span>
@@ -60,21 +59,23 @@
           9521 Broadsberry Avenue<br />
           Paddington RC7 9ZA
         </li>
-        <li>
+        <li class="text-light">
           <i class="fa-solid fa-phone-flip"></i> 1.800.458.556 / 1.800.532.2112
         </li>
-        <li><i class="fa-solid fa-phone-flip"></i> info@your-domain.com</li>
-        <li>
+        <li class="text-light">
+          <i class="fa-solid fa-phone-flip"></i> info@your-domain.com
+        </li>
+        <li class="text-light">
           <i class="fa-regular fa-clock"></i> Monday – Friday: 9:00 AM – 6:00 PM
         </li>
-        <li>
+        <li class="text-light">
           <i class="fa-regular fa-clock"></i> Saturday – Sunday: 9:00 AM – 12:00
           PM
         </li>
       </ul>
     </div>
     <div class="my-footer d-flex flex-column">
-      <h5>Our Location</h5>
+      <h5 class="footer-text mt-3">OUR LOCATION</h5>
       <img
         src="src\assets\img\construction_map_pin.png-Notti"
         alt="maps"
@@ -84,8 +85,8 @@
   </div>
   <div class="end-footer d-flex justify-content-between ps-3">
     <span class="fs-6"
-      >©COPYRIGHT 2012 - 2023 | AVADA THEME BY THEMEFUSION | ALL RIGHTS RESERVED
-      | POWERED BY WORDPRESS</span
+      >©COPYRIGHT <small>2012 - 2023</small> | AVADA THEME BY THEMEFUSION | ALL
+      RIGHTS RESERVED | POWERED BY WORDPRESS</span
     >
     <div class="">
       <a class="ps-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>

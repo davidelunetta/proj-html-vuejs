@@ -155,6 +155,19 @@
       </span>
     </div>
   </div>
+  <div class="container d-flex justify-content-between">
+    <div v-for="(item, index) in items" :key="index">
+      <img
+        :src="item.image"
+        :alt="item.title"
+        style="width: 100px; height: 100px"
+      />
+      <h2>
+        <a :href="item.link">{{ item.title }}</a>
+      </h2>
+      <span>{{ item.paragraph }}</span>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -175,10 +188,30 @@ export default {
           content: "Contenuto del Tab 2",
         },
       ],
+      items: [
+        {
+          image: "/src/assets/img/blog-post-134132600-400x241.jpg",
+          title: "Titolo 1",
+          link: "https://link1.com",
+          paragraph: "Descrizione breve 1",
+        },
+        {
+          image: "path_to_image2.jpg",
+          title: "Titolo 2",
+          link: "https://link2.com",
+          paragraph: "Descrizione breve 2",
+        },
+        {
+          image: "path_to_image3.jpg",
+          title: "Titolo 3",
+          link: "https://link3.com",
+          paragraph: "Descrizione breve 3",
+        },
+      ],
     };
   },
+
   mounted() {
-    // Funzione per scorrere automaticamente tra i tab ogni 5 secondi
     setInterval(() => {
       this.activeTab = (this.activeTab + 1) % this.tabs.length;
     }, 10000);

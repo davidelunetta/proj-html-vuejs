@@ -120,5 +120,6 @@ export default {
 
 .my-card:hover .hover-state {
   display: block;
+  background-color: #fed03d;
 }
 </style>

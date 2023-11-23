@@ -155,24 +155,62 @@
       </span>
     </div>
   </div>
-  <div class="container d-flex justify-content-between">
-    <div v-for="(item, index) in items" :key="index">
-      <img
-        :src="item.image"
-        :alt="item.title"
-        style="width: 100px; height: 100px"
-      />
-      <h2>
-        <a :href="item.link">{{ item.title }}</a>
-      </h2>
-      <span>{{ item.paragraph }}</span>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div v-for="(item, index) in items" :key="index" class="card-news">
+        <div class="text-center mx-2">
+          <img
+            :src="item.image"
+            :alt="item.title"
+            style="width: 350px; height: 200px"
+          />
+        </div>
+        <div class="ps-3 pe-3 d-flex flex-column">
+          <h2 class="">
+            <a :href="item.link">{{ item.title }}</a>
+          </h2>
+          <small class="text-gray">{{ item.date }}</small>
+          <span class="">{{ item.paragraph }}</span>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="d-flex justify-content-between mt-5">
+    <div class="line ms-5 mt-3"></div>
+    <a href="#"><button>VIEW ALL ARTICLES</button></a>
+    <div class="line me-5 mt-3"></div>
+  </div>
+  <div
+    class="pt-5 pb-5 d-flex flex-column justify-content-center align-items-center text-center"
+  >
+    <span class="fw-medium fs-3"> Trusted Partners </span>
+    <div class="separator mt-3"></div>
+    <div class="container mt-3">
+      <span class="text-center"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+        distinctio doloribus quidem odio, ipsum hic facere nesciunt consequuntur
+        laudantium corrupti explicabo recusandae aut consequatur nam magnam
+        doloremque architecto enim magni.
+      </span>
+    </div>
+  </div>
+  <!-- CAROUSEL -->
+  <div class="container">
+    <split-carousel :autoplay="true" :autoplay-timeout="3000" :width="1200">
+      <slide v-for="(image, index) in images" :key="index">
+        <img :src="image.src" :alt="image.alt" />
+      </slide>
+    </split-carousel>
   </div>
 </template>
 
 <script>
+import SplitCarousel from "vue-split-carousel";
 export default {
   name: "Main",
+  components: {
+    SplitCarousel,
+  },
 
   data() {
     return {
@@ -190,23 +228,33 @@ export default {
       ],
       items: [
         {
-          image: "/src/assets/img/blog-post-134132600-400x241.jpg",
-          title: "Titolo 1",
+          image: "/src/assets/img/blog-post-134132600-1200x723.jpg",
+          title: "Redeveloping Florida’s Remote Southern Coast",
           link: "https://link1.com",
-          paragraph: "Descrizione breve 1",
+          date: "December 7th, 2015",
+          paragraph:
+            "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
         },
         {
-          image: "path_to_image2.jpg",
-          title: "Titolo 2",
+          image: "/src/assets/img/blog-post-92486644-1200x723.jpg",
+          title: "How We Manage Large Construction Projects",
           link: "https://link2.com",
-          paragraph: "Descrizione breve 2",
+          date: "December 7th, 2015",
+          paragraph:
+            "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
         },
         {
-          image: "path_to_image3.jpg",
-          title: "Titolo 3",
+          image: "/src/assets/img/blog-post-332773904-1200x723.jpg",
+          title: "Future proofing a modern home",
           link: "https://link3.com",
-          paragraph: "Descrizione breve 3",
+          date: "December 6th, 2015",
+          paragraph:
+            "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
         },
+      ],
+      images: [
+        { src: "url_dell_immagine_1.jpg", alt: "Partner 1" },
+        { src: "url_dell_immagine_2.jpg", alt: "Partner 2" },
       ],
     };
   },

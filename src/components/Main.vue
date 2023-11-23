@@ -123,39 +123,49 @@
     </div>
   </div>
 
-  <div class="d-flex justify-content-between mt-3 ms-5">
+  <div class="d-flex justify-content-between mt-3 me-5 ms-5">
     <div class="card-core d-flex flex-column align-items-center pt-3">
-      <i class="fa-solid fa-house"></i>
-      <span>Great Services</span>
-      <div class="grey-line"></div>
-      <span class="text-center"
+      <div class="fs-1">
+        <i class="fa-solid fa-house"></i>
+      </div>
+
+      <span class="mt-2">Great Services</span>
+      <div class="grey-line mt-2"></div>
+      <span class="text-center mt-4 ps-3 pe-3"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div class="card-core d-flex flex-column align-items-center">
-      <i class="fa-solid fa-gear"></i>
-      <span>Highest Standards</span>
-      <div class="grey-line"></div>
-      <span class="text-center"
+    <div class="card-core d-flex flex-column align-items-center pt-3">
+      <div class="fs-1">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+
+      <span class="mt2">Highest Standards</span>
+      <div class="grey-line mt-2"></div>
+      <span class="text-center mt-4 ps-3 pe-3"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div class="card-core d-flex flex-column align-items-center">
-      <i class="fa-solid fa-users"></i>
-      <span>Professional Team</span>
-      <div class="grey-line"></div>
-      <span class="text-center"
+    <div class="card-core d-flex flex-column align-items-center pt-3">
+      <div class="fs-1">
+        <i class="fa-solid fa-users"></i>
+      </div>
+      <span class="mt2">Professional Team</span>
+      <div class="grey-line mt-2"></div>
+      <span class="text-center mt-4 ps-3 pe-3"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >
     </div>
-    <div class="card-core d-flex flex-column align-items-center me-5">
-      <i class="fa-regular fa-lightbulb"></i>
-      <span>Creative Solutions</span>
-      <div class="grey-line"></div>
-      <span class="text-center"
+    <div class="card-core d-flex flex-column align-items-center pt-3">
+      <div class="fs-1">
+        <i class="fa-regular fa-lightbulb"></i>
+      </div>
+      <span class="mt-2">Creative Solutions</span>
+      <div class="grey-line mt-2"></div>
+      <span class="text-center mt-4 ps-3 pe-3"
         >Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit, sed quia</span
       >

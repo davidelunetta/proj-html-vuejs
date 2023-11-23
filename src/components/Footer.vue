@@ -82,6 +82,18 @@
       />
     </div>
   </div>
+  <div class="end-footer d-flex justify-content-between ps-3">
+    <span class="fs-6"
+      >©COPYRIGHT 2012 - 2023 | AVADA THEME BY THEMEFUSION | ALL RIGHTS RESERVED
+      | POWERED BY WORDPRESS</span
+    >
+    <div class="">
+      <a class="ps-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a class="ps-4" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="ps-4" href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a class="ps-4 pe-3" href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
 </template>
 
 <script>

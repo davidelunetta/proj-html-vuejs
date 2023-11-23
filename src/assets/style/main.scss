@@ -92,5 +92,26 @@ $fa-font-path: '../webfonts';
 
 .my-container {
     width: 1200px;
+    height: 150px;
     margin: 0 auto;
+    
+    img{
+        width: 150px;
+        height: 80px;
+        
+    }
   }
+
+//   FOOTER //
+
+.call-to-action{
+    width: 100%;
+    height: 50vh;
+    background-image: url('/src/assets/img/about-call-to-action-57862405.jpg');
+    background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: bottom 5px right 0px;
+}
+.cta-right{
+    width: calc(100% / 2 - 40px) ;
+}

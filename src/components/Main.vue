@@ -195,10 +195,10 @@
     </div>
   </div>
   <!-- CAROUSEL -->
-  <div class="my-container">
+  <div class="my-container pb-5">
     <split-carousel>
       <split-carousel-item v-for="image in images" :key="image.id">
-        <img :src="image.src" :alt="image.alt" />
+        <img :src="image.src" :alt="image.alt" style="" />
       </split-carousel-item>
     </split-carousel>
   </div>

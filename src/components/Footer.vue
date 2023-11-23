@@ -28,18 +28,22 @@
         outstanding quality and design for leading clients across the
         world.</span
       >
-      <button class="btn btn-light mt-2">Learn More</button>
+      <button class="btn-header-right ms-2 me-2 mt-2">Learn More</button>
     </div>
     <div class="my-footer d-flex flex-column">
       <h5 class="footer-text mt-3">LATEST TWEET</h5>
-      <div class="mt-3 ms-1">
+      <div class="mt-3 ms-1 pb-1">
         <i class="fa-brands fa-x-twitter fa-2xl" style="color: #1d9bf0"></i>
       </div>
-      <h2 class="fw-semibold mt-1 text-light">Nothing to see here - yet</h2>
+      <h2 class="fw-semibold mt-1 text-light mt-3">
+        Nothing to see here - yet
+      </h2>
       <small class="text-light mt-1"
         >When they Tweet, their Tweets will show up here.</small
       >
-      <button class="btn btn-light mt-3">VIEW ON TWITTER</button>
+      <button class="btn btn-primary rounded-pill mt-3 ms-2 me-2">
+        VIEW ON TWITTER
+      </button>
     </div>
     <div class="my-footer d-flex flex-column">
       <h5 class="footer-text mt-3">CONTACT US TODAY</h5>

@@ -34,12 +34,16 @@
     <h1>Building Inspiring Spaces</h1>
     <h5 class="pt-3">We Build Inspiring Residential & Commercial Spaces</h5>
     <div class="pt-3">
-      <button class="btn-header-left me-1">Explore recent work</button>
-      <button class="btn-header-right ms-1">Get a quote today</button>
+      <button class="btn-header-left me-1 fw-semibold">
+        EXPLORE RECENT WORK
+      </button>
+      <button class="btn-header-right ms-1 fw-semibold">
+        GET A QUOTE TODAY
+      </button>
     </div>
   </div>
   <div
-    class="y-flag d-flex flex-column align-items-center justify-content-center"
+    class="y-flag d-flex flex-column align-items-center justify-content-center mb-4"
   >
     <span class="">Do you have a construction project we can help with?</span>
     <div class="quote-btn d-flex align-items-center justify-content-center">

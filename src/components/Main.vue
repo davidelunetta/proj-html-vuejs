@@ -191,7 +191,7 @@
             alt="img"
             class="tab-image mt-3 rounded-circle"
           />
-          <span class="text-center text-light fw-semibold fs-3">{{
+          <span class="text-center text-light fw-semibold fs-3 ps-3 pe-3">{{
             tab.content
           }}</span>
         </div>

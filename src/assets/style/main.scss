@@ -33,11 +33,11 @@ $fa-font-path: '../webfonts';
     }
 }
 .btn-header-left{
-    background-color: #333333; /* Sfondo nero */
-    color: #ffffff; /* Colore del testo bianco */
-    padding: 10px 20px; /* Padding per spaziatura interno del bottone */
-    border: none; /* Rimuove il bordo */
-    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    background-color: #333333;
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
     transition: color 0.3s; 
     
 }
@@ -46,27 +46,27 @@ $fa-font-path: '../webfonts';
     color: #333333;
 }
 .btn-header-right{
-    background-color: #FED03D; /* Sfondo nero */
-    color: #333333; /* Colore del testo bianco */
-    padding: 10px 20px; /* Padding per spaziatura interno del bottone */
-    border: none; /* Rimuove il bordo */
-    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    background-color: #FED03D; 
+    color: #333333; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
     transition: color 0.3s; 
 }
 .btn-header-right:hover{
-    background-color: #333333; /* Sfondo nero */
+    background-color: #333333;
     color: #ffffff;
 }
 .btn-projects{
-    background-color: transparent; /* Sfondo trasparente */
-    color: black; /* Colore del testo */
-    padding: 10px 20px; /* Padding per spaziatura interna del bottone */
-    border: 1px solid transparent; /* Bordo sottile */
-    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    background-color: transparent; 
+    color: black; 
+    padding: 10px 20px; 
+    border: 1px solid transparent; 
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 .btn-projects:hover{
-    background-color: #FED03D; /* Cambia il colore di sfondo al passaggio del mouse */
+    background-color: #FED03D; 
   color: black;
 }
 .y-flag{
@@ -80,7 +80,7 @@ $fa-font-path: '../webfonts';
 }
 .quote-btn{
     position: absolute;
-    bottom: -50px;
+    bottom: -25px;
 }
 
 ul{
@@ -160,9 +160,9 @@ a{
 
   .recent-works{
     position: relative;
-    width: 400px; /* Larghezza della card */
-    height: 400px; /* Altezza della card */
-    perspective: 1000px; /* Prospettiva per la trasformazione 3D */
+    width: 400px;
+    height: 400px; 
+    perspective: 1000px;
   }
   .recent-works img {
     width: 100%;
@@ -187,7 +187,7 @@ a{
     opacity: 1;
     background-color: #FED03D;
     width: 100%; 
-    height: 100%;/* Mostra i link e il testo al passaggio del mouse */
+    height: 100%;
   }
   .card-core{
     width: 300px;

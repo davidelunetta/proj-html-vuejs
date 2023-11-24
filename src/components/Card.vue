@@ -32,8 +32,8 @@
             ></div>
           </div>
 
-          <h3>{{ item.titolo }}</h3>
-          <p>{{ item.descrizione }}</p>
+          <h3 class="text-center">{{ item.titolo }}</h3>
+          <p class="text-center">{{ item.descrizione }}</p>
         </div>
         <div class="hover-state" v-show="item.showRetro">
           <h3>{{ item.titoloRetro }}</h3>

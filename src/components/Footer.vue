@@ -1,16 +1,18 @@
 <template>
-  <div class="call-to-action d-flex justify-content-between">
-    <div class="cta-right pt-5 pb-5 align-items-center">
+  <div class="call-to-action d-flex justify-content-between align-items-center">
+    <div class="cta-right pt-5 pb-5">
       <div class="ps-4">
-        <span class="fw-medium fs-3 text-light"> Trusted Partners </span>
+        <span class="fw-medium fs-2 text-light">
+          Building Inspiring Spaces
+        </span>
         <div class="separator mt-3"></div>
-        <span class="text-light mt-3"
+        <span class="text-light pt-4"
           >Vivamus sed consectetur tellus dolor sit amet, consectetur adipiscing
           lorem elit sadip ipsum ets ficilis uns.
         </span>
       </div>
     </div>
-    <div class="cta-right pt-5 pb-5 d-flex flex-column text-light">
+    <div class="cta-right d-flex flex-column align-items-center text-light">
       <button class="btn-header-right ms-5 me-5">Get a Free Quote</button>
       <span class="text-center pt-3">Only takes a few seconds!</span>
     </div>
@@ -46,13 +48,16 @@
       </button>
     </div>
     <div class="my-footer d-flex flex-column">
-      <h5 class="footer-text mt-3">CONTACT US TODAY</h5>
-      <ul>
+      <h5 class="footer-text mt-3 ps-2">CONTACT US TODAY</h5>
+      <ul class="ps-2">
         <li class="text-light">
           <span>
             <i class="fa-solid fa-globe"></i>
           </span>
-          Corporate Location<br />1600 Amphitheatre Parkway<br />London WC1 1BA
+          <span class="text-center">
+            Corporate Location<br />1600 Amphitheatre Parkway<br />London WC1
+            1BA
+          </span>
         </li>
         <li class="text-light">
           <span>
@@ -78,16 +83,18 @@
         </li>
       </ul>
     </div>
-    <div class="my-footer d-flex flex-column">
+    <div class="my-footer d-flex flex-column ps-4">
       <h5 class="footer-text mt-3">OUR LOCATION</h5>
       <img
         src="src\assets\img\construction_map_pin.png-Notti"
         alt="maps"
-        class="maps"
+        class="maps pt-3"
       />
     </div>
   </div>
-  <div class="end-footer d-flex justify-content-between ps-3">
+  <div
+    class="end-footer d-flex justify-content-between align-items-center ps-3"
+  >
     <span class="fs-6"
       >©COPYRIGHT <small>2012 - 2023</small> | AVADA THEME BY THEMEFUSION | ALL
       RIGHTS RESERVED | POWERED BY WORDPRESS</span
@@ -96,7 +103,7 @@
       <a class="ps-4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
       <a class="ps-4" href="#"><i class="fa-brands fa-x-twitter"></i></a>
       <a class="ps-4" href="#"><i class="fa-brands fa-youtube"></i></a>
-      <a class="ps-4 pe-3" href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a class="ps-4 pe-4" href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </div>
 </template>
